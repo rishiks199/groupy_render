@@ -9,7 +9,15 @@ const {userJoin, getCurrentUser,userLeave,getRoomUsers} = require('./utils/users
 const app = express();
 
 const server = http.createServer(app)
-const io = socketio(server);
+const io = socketio(server, {
+    cors: {
+        origin: "http://localhost",
+        methods: ["GET", "POST"],
+        transports: ['websocket', 'polling'],
+        credentials: true
+    },
+    allowEIO3: true
+});
 
 
 app.use(express.static(path.join(__dirname,'public')));
