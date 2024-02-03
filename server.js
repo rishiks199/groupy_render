@@ -11,7 +11,7 @@ const app = express();
 const server = http.createServer(app)
 const io = socketio(server, {
     cors: {
-        origin: "http://localhost",
+        origin: "groupy-chatapp-for-random-groups-3c2ktyu62-rishiks199s-projects.vercel.app",
         methods: ["GET", "POST"],
         transports: ['websocket', 'polling'],
         credentials: true
