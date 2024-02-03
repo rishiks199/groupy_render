@@ -195,6 +195,16 @@ a {
 	width: 100%;
 }
 
+.heading {
+	font-size: 24px; /* Adjust the font size as needed */
+	font-weight: bold; /* Add bold styling */
+	color: #0408ff; /* Set the color to a blue shade; you can choose your preferred color */
+	text-align: center; /* Center the text */
+	text-transform: uppercase; /* Convert the text to uppercase */
+	margin-bottom: 10px; /* Add a bottom margin for spacing */
+	background: #e6e9ff;
+  }
+
 @media (max-width: 700px) {
 	.chat-main {
 		display: block;
